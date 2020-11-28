@@ -3,6 +3,31 @@ body {
     background: #EBEFF4;
 }
 
+.message {
+    background: #FFEB3B;
+    padding: 7px 15px;
+    box-shadow: 1px 3px 14px #acacac91;
+    position: fixed;
+    color: #000;
+    z-index: 1;
+    top: 50px;
+    left: 45%;
+    opacity: 0;
+    transform: translateY(-105px);
+    font-family: 'Circular-Loom';
+    border-radius: 50px;
+}
+
+.animation{
+    animation: showMessage 1.2s cubic-bezier(0, 0.94, 0.78, 1.49);
+}
+
+@keyframes showMessage{
+    50%{opacity: 1;}
+    90%{transform: translateY(-20px)}
+    100%{opacity: 0;}
+}
+
 * {
     box-sizing: border-box;
     padding: 0;

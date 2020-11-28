@@ -17,7 +17,6 @@ function createItem(color, desc) {
     const elmColor = creElementWithClass('div', 'palette-color');
     const elmDesc = creElementWithClass('div', 'palette-desc');
     const elmInput = creElementWithClass('input', 'palette-input');
-    //<i class="fas fa-lock"></i>
     const lockIcon = '<div onclick="lockHandler(event)" class="lock-icon"><i class="fas fa-unlock"></i></div>';
 
     elmColor.style.background = color;
@@ -90,7 +89,17 @@ function generateRandomColor() {
 
 //--------------------------------------------Icon lock process------------------------------------------
 function lockHandler(e) {
+    const message = document.querySelector('.message');
+
     if (e.target.className === 'fas fa-unlock') {
+        //add the popup animation to the message
+        message.classList.add('animation');
+
+        //delete the popup animation after 1s
+        setTimeout(() => {
+            message.classList.remove('animation')
+        },1000)
+        
         e.target.parentNode.innerHTML = '<i class="fas fa-lock"></i>';
     }
 
