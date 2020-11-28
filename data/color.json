@@ -1,0 +1,42 @@
+[
+    {
+        "desc" : "decode primary",
+        "color" : "#009578"
+    },
+    {
+        "desc" : "decode primary light",
+        "color" : "#6dcdb1"  
+    },
+    {
+        "desc" : "decode Secondary",
+        "color" : "#252c6a"
+    },
+    {
+        "desc" : "decode Secondary light",
+        "color" : "#7f89df"  
+    },
+    {
+        "desc" : "decode Teritary",
+        "color" : "#ff6d10"
+    },
+    {
+        "desc" : "decode Teritary light",
+        "color" : "#ffddc7"  
+    },
+    {
+        "desc" : "decode Red",
+        "color" : "#fa364a"
+    },
+    {
+        "desc" : "decode Red light",
+        "color" : "#ffb0c0"  
+    },
+    {
+        "desc" : "decode yellow light",
+        "color" : "#FFED65"  
+    },
+    {
+        "desc" : "decode gray light",
+        "color" : "#EDF0DA"  
+    }
+]
