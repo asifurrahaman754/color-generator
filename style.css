@@ -10,21 +10,21 @@ body {
     position: fixed;
     color: #000;
     z-index: 1;
-    top: 50px;
-    left: 45%;
+    top: -30px;
+    left: 50%;
     opacity: 0;
-    transform: translateY(-105px);
+    transform: translate(-50%, -50%);
     font-family: 'Circular-Loom';
     border-radius: 50px;
 }
 
 .animation{
-    animation: showMessage 1.2s cubic-bezier(0, 0.94, 0.78, 1.49);
+    animation: showMessage 1.4s cubic-bezier(0, 0.94, 0.78, 1.49);
 }
 
 @keyframes showMessage{
     50%{opacity: 1;}
-    90%{transform: translateY(-20px)}
+    90%{top: 60px;}
     100%{opacity: 0;}
 }
 
